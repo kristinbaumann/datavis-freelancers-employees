@@ -54,20 +54,22 @@ const IndexPage = () => {
           The Data Vis Industry for Employees and Freelancers
         </h1>
         <p className="lg:text-2xl sm:text-lg text-sm font-light">
-          A comparison of wertzu, xyz and zabc
+          A comparison of Target Audiences, Communication Channels and Tools
         </p>
       </header>
       <div className="md:container md:mx-auto">
-        <div className="key insight">
-          <p>Here comes a great insight in this chapter</p>
-        </div>
-        <div>VIS comes here</div>
-        <div>more detailed text here</div>
+        <p className="py-9">
+          Distribution (how many Freelancers / how many Employees): TODO
+        </p>
+        <p className="py-9">Roles: TODO</p>
 
-        <FlourishEmbed vis_id={8397690} />
-        <p className="py-9">Tesdsds</p>
+        <p className="py-9">Target Audiences</p>
+        <FlourishEmbed vis_id={8398594} />
+        <p className="py-9">Communication Channels</p>
+        <FlourishEmbed vis_id={8398514} />
+        <p className="py-9">Tools</p>
         <FlourishEmbed vis_id={8398316} />
-        <p className="py-9">Tesdsds</p>
+        <p className="py-9">...</p>
       </div>
     </div>
   );
