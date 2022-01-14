@@ -42,7 +42,7 @@ fs.readFile("data_2021_main_dvs-soti_v1.1.json", (err, data) => {
       .length,
   };
 
-  console.log(res);
+  // console.log(res);
 
   // Freelancer Roles
   let responses = [
@@ -70,61 +70,11 @@ fs.readFile("data_2021_main_dvs-soti_v1.1.json", (err, data) => {
   }
   //console.log(roleResults);
 
-  // Q17 Who do you make vis for? difference between freelancer only and freelance with employment
-
   let data_set_fr_only = d.filter((e) => is_fr(e) & (e.DVRoles_ == 1));
+  let data_set_fr_without_em = d.filter((e) => is_fr(e) & !is_em(e));
   let data_set_fr_em = d.filter((e) => is_fr(e) & is_em(e));
   let data_set_em_only = d.filter((e) => is_em(e) & (e.DVRoles_ == 1));
-  let audience_results = [];
-
-  let responses_audience = [
-    "General Public",
-    "Analysts",
-    "Engineers",
-    "Scientists",
-    "Medical Professionals",
-    "Product or Project Managers",
-    "Policy Makers",
-    "Executives",
-    "Designers",
-    "Researchers",
-    "Students",
-    "Educators",
-    "Other Data Visualization Enthusiasts",
-    "Myself",
-    "Other (please specify)",
-  ];
-
-  let keys = [
-    "AudienceEmployee_Public",
-    "AudienceEmployee_Analysts",
-    "AudienceEmployee_Engineers",
-    "AudienceEmployee_Scientists",
-    "AudienceEmployee_Medical",
-    "AudienceEmployee_ProdProjManagers",
-    "AudienceEmployee_PolicyMakers",
-    "AudienceEmployee_Execs",
-    "AudienceEmployee_Designers",
-    "AudienceEmployee_Researchers",
-    "AudienceEmployee_Students",
-    "AudienceEmployee_Educators",
-    "AudienceEmployee_DVEnthusiasts",
-    "AudienceEmployee_Self",
-    "AudienceEmployee_Other__",
-  ];
-
-  for (let i = 0; i < responses_audience.length; i++) {
-    let response = responses_audience[i];
-
-    audience_results[keys[i]] = data_set_em_only.filter(
-      (obj) => obj[keys[i]] === response
-    ).length;
-  }
-  // console.log(audience_results);
-
-  // total responses for subgroup
-  let c = data_set_em_only.filter((o) => o.AudienceEmployee_ > 0).length;
-  // console.log(c);
+  let data_set_em_all = d.filter((e) => is_em(e));
 
   // Q15 and Q22 choice of tools compare between freelancers and employees
 
@@ -165,95 +115,6 @@ fs.readFile("data_2021_main_dvs-soti_v1.1.json", (err, data) => {
   }
   // console.log(toolChoiceEmResults);
   r = d.filter((o) => o.ToolsChoiceEmployee != "").length;
-  // console.log(r);
-
-  // Q34 technologies, compare
-
-  let responses_tools = [
-    "ArcGIS",
-    "D3.js",
-    "Angular",
-    "Datawrapper",
-    "Excel",
-    "Flourish",
-    "ggplot2",
-    "Gephi",
-    "Google Data Studio",
-    "Highcharts",
-    "Illustrator",
-    "Java",
-    "Leaflet",
-    "Mapbox",
-    "kepler.gl",
-    "Observable",
-    "Plotly",
-    "Power BI",
-    "PowerPoint",
-    "Python",
-    "QGIS",
-    "Qlik",
-    "R",
-    "React",
-    "Tableau",
-    "Vega",
-    "Vue",
-    "Web Components",
-    "WebGL",
-    "Pen & paper",
-    "Physical materials (other than pen and paper)",
-    "Canvas",
-    "P5/Processing",
-    "Other (please specify)",
-  ];
-
-  let keys_tools = [
-    "ToolsForDV_ArcGIS",
-    "ToolsForDV_D3",
-    "ToolsForDV_Angular",
-    "ToolsForDV_Datawrapper",
-    "ToolsForDV_Excel",
-    "ToolsForDV_Flourish",
-    "ToolsForDV_ggplot2",
-    "ToolsForDV_Gephi",
-    "ToolsForDV_GoogleDataStudio",
-    "ToolsForDV_Highcharts",
-    "ToolsForDV_Illustrator",
-    "ToolsForDV_Java",
-    "ToolsForDV_Leaflet",
-    "ToolsForDV_Mapbox",
-    "ToolsForDV_KeplerGL",
-    "ToolsForDV_Observable",
-    "ToolsForDV_Plotly",
-    "ToolsForDV_PowerBI",
-    "ToolsForDV_PowerPoint",
-    "ToolsForDV_Python",
-    "ToolsForDV_QGIS",
-    "ToolsForDV_Qlik",
-    "ToolsForDV_R",
-    "ToolsForDV_React",
-    "ToolsForDV_Tableau",
-    "ToolsForDV_Vega",
-    "ToolsForDV_Vue",
-    "ToolsForDV_WebComponents",
-    "ToolsForDV_WebGL",
-    "ToolsForDV_PenPaper",
-    "ToolsForDV_PhysicalMaterials",
-    "ToolsForDV_Canvas",
-    "ToolsForDV_P5orProcessing",
-    "ToolsForDV_Other__",
-  ];
-  let tools_results = [];
-
-  for (let i = 0; i < responses_tools.length; i++) {
-    let response = responses_tools[i];
-
-    tools_results[keys_tools[i]] = data_set_em_only.filter(
-      (obj) => obj[keys_tools[i]] === response
-    ).length;
-  }
-  // console.log(tools_results);
-
-  r = data_set_fr_only.filter((o) => o.ToolsForDV_ > 0).length;
   // console.log(r);
 
   // Q36 vis communication compare between frees and ems

@@ -1,10 +1,10 @@
 import * as React from "react";
 
-const FlourishEmbed = () => {
+const FlourishEmbed = ({ vis_id }) => {
   return (
     <>
       <iframe
-        src="https://flo.uri.sh/visualisation/8393714/embed"
+        src={"https://flo.uri.sh/visualisation/" + vis_id + "/embed"}
         title="Interactive or visual content"
         className="flourish-embed-iframe"
         frameBorder="0"
@@ -21,7 +21,12 @@ const FlourishEmbed = () => {
       >
         <a
           className="flourish-credit"
-          href="https://public.flourish.studio/visualisation/8393714/?utm_source=embed&utm_campaign=visualisation/8393714"
+          href={
+            "https://public.flourish.studio/visualisation/" +
+            vis_id +
+            "/?utm_source=embed&utm_campaign=visualisation/" +
+            vis_id
+          }
           target="_top"
           style={{ textDecoration: "none!important" }}
         >
@@ -52,15 +57,17 @@ const IndexPage = () => {
           A comparison of wertzu, xyz and zabc
         </p>
       </header>
-      <div className="chapter">
-        <h2>Chapter Title</h2>
+      <div className="md:container md:mx-auto">
         <div className="key insight">
           <p>Here comes a great insight in this chapter</p>
         </div>
         <div>VIS comes here</div>
         <div>more detailed text here</div>
 
-        <FlourishEmbed />
+        <FlourishEmbed vis_id={8397690} />
+        <p className="py-9">Tesdsds</p>
+        <FlourishEmbed vis_id={8398316} />
+        <p className="py-9">Tesdsds</p>
       </div>
     </div>
   );
