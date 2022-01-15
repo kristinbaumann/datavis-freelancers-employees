@@ -25,8 +25,11 @@ fs.readFile("data_2021_main_dvs-soti_v1.1.json", (err, data) => {
   // Roles in general
   let res = {
     fr: d.filter((e) => is_fr(e)).length,
+    only_fr: d.filter((e) => is_fr(e) & (e.DVRoles_ == 1)).length,
     em: d.filter((e) => is_em(e)).length,
+    only_em: d.filter((e) => is_em(e) & (e.DVRoles_ == 1)).length,
     ac: d.filter((e) => is_ac(e)).length,
+    only_ac: d.filter((e) => is_ac(e) & (e.DVRoles_ == 1)).length,
     st: d.filter((e) => is_st(e)).length,
     fr_em: d.filter((e) => is_fr(e) & is_em(e)).length,
     fr_ac: d.filter((e) => is_fr(e) & is_ac(e)).length,
@@ -42,7 +45,7 @@ fs.readFile("data_2021_main_dvs-soti_v1.1.json", (err, data) => {
       .length,
   };
 
-  // console.log(res);
+  console.log(res);
 
   // Freelancer Roles
   let responses = [
