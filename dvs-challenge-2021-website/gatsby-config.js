@@ -1,7 +1,20 @@
 module.exports = {
   siteMetadata: {
     title: `DVS Challenge 2021`,
-    siteUrl: `https://www.yourdomain.tld`,
+    siteUrl: `https://dvs-soti-challenge-2021.kristin-baumann.com/`,
   },
-  plugins: ["gatsby-plugin-postcss"],
+  plugins: [
+    {
+      resolve: "gatsby-plugin-postcss",
+    },
+    {
+      resolve: `gatsby-plugin-scroll-indicator`,
+      options: {
+        // Configure color of the scroll indicator
+        color: "#1D6996",
+        // Height of the scroll indicator
+        height: "3px",
+      },
+    },
+  ],
 };
