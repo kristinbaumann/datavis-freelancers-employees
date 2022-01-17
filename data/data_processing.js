@@ -47,32 +47,6 @@ fs.readFile("data_2021_main_dvs-soti_v1.1.json", (err, data) => {
 
   console.log(res);
 
-  // Freelancer Roles
-  let responses = [
-    "Analyst",
-    "Scientist",
-    "Engineer",
-    "Developer",
-    "Journalist",
-    "Designer",
-    "Cartographer",
-    "Teacher",
-    "Leadership",
-    "None",
-  ];
-  let roleResults = [];
-
-  let data_set = d.filter((e) => is_fr(e));
-
-  for (let i = 0; i < responses.length; i++) {
-    let response = responses[i];
-
-    roleResults[response] = data_set.filter(
-      (obj) => obj.RoleAsFreelance === response
-    ).length;
-  }
-  //console.log(roleResults);
-
   let data_set_fr_only = d.filter((e) => is_fr(e) & (e.DVRoles_ == 1));
   let data_set_fr_without_em = d.filter((e) => is_fr(e) & !is_em(e));
   let data_set_fr_em = d.filter((e) => is_fr(e) & is_em(e));

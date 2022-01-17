@@ -59,10 +59,11 @@ const IndexPage = () => {
       </header>
       <div className="md:container md:mx-auto">
         <p className="py-9">
-          Distribution (how many Freelancers / how many Employees): TODO
+          Distribution (how many Freelancers / how many Employees):
         </p>
-        <p className="py-9">Roles: TODO</p>
-
+        <FlourishEmbed vis_id={8405920} />
+        <p className="py-9">Positions</p>
+        <FlourishEmbed vis_id={8420535} />
         <p className="py-9">Target Audiences</p>
         <FlourishEmbed vis_id={8398594} />
         <p className="py-9">Communication Channels</p>
