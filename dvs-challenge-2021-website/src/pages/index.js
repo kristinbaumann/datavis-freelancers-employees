@@ -2,25 +2,9 @@ import * as React from "react";
 
 import FlourishEmbed from "../components/FlourishEmbed";
 import Footer from "../components/Footer";
+import Hero from "../components/Hero";
 
 const containerStyle = "container w-full md:max-w-3xl mx-auto px-4 md:px-6";
-
-const Hero = () => (
-  <div className="bg-white border-b border-gray-400 shadow">
-    <div className="font-sans py-6">
-      <h1 className="font-bold font-sans break-normal text-gray-900 pt-6 pb-6 text-3xl md:text-5xl text-center leading-10">
-        The Data Vis Industry for <br />
-        <span className="text-freelancer italic font-serif">
-          Freelancers
-        </span>{" "}
-        and <span className="text-employee italic font-serif">Employees</span>
-      </h1>
-      <p className="text-l md:text-xl font-normal text-gray-600 text-center">
-        A comparison of Target Audiences, Communication Channels and Tools
-      </p>
-    </div>
-  </div>
-);
 
 const TextSection = ({ children }) => {
   return <p className="text-l text-gray-800 leading-loose py-6">{children}</p>;
@@ -156,6 +140,24 @@ const IndexPage = () => {
 
       <FlourishEmbed vis_id={8398316} />
       <div className={containerStyle}>
+        <TextSection>
+          Sed dignissim lectus ut tincidunt vulputate. Fusce tincidunt lacus
+          purus, in mattis tortor sollicitudin pretium. Phasellus at diam
+          posuere, scelerisque nisl sit amet, tincidunt urna. Cras nisi diam,
+          pulvinar ut molestie eget, eleifend ac magna. Sed at lorem
+          condimentum, dignissim lorem eu, blandit massa. Phasellus eleifend
+          turpis vel erat bibendum scelerisque. Maecenas id risus dictum,
+          rhoncus odio vitae, maximus purus. Etiam efficitur dolor in dolor
+          molestie ornare. Aenean pulvinar diam nec neque tincidunt, vitae
+          molestie quam fermentum. Donec ac pretium diam. Suspendisse sed odio
+          risus. Nunc nec luctus nisi. Class aptent taciti sociosqu ad litora
+          torquent per conubia nostra, per inceptos himenaeos. Duis nec nulla
+          eget sem dictum elementum.
+        </TextSection>
+      </div>
+
+      <div className={containerStyle}>
+        <ChapterHeadline>Conclusion</ChapterHeadline>
         <TextSection>
           Sed dignissim lectus ut tincidunt vulputate. Fusce tincidunt lacus
           purus, in mattis tortor sollicitudin pretium. Phasellus at diam
