@@ -10,6 +10,7 @@ module.exports = {
       colors: {
         freelancer: "#1D6996",
         employee: "#EDAD08",
+        both: "#008000",
       },
     },
   },
