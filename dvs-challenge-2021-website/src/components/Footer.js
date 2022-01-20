@@ -8,39 +8,33 @@ const Footer = () => (
           <div className="px-8">
             <h3 className="font-bold text-gray-900">About</h3>
             <p className="py-4 text-gray-600 text-sm">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
-              vel mi ut felis tempus commodo nec id erat. Suspendisse
-              consectetur dapibus velit ut lacinia.
+              Project by Kristin Baumann as part of the Data Vis Society
+              Challenge 2021. <br />
+              Created with Gatsby, Flourish and Netlify.
             </p>
           </div>
         </div>
 
         <div className="flex w-full md:w-1/2">
           <div className="px-8">
-            <h3 className="font-bold text-gray-900">Social</h3>
+            <h3 className="font-bold text-gray-900">
+              Follow me or get in contact
+            </h3>
             <ul className="list-reset items-center text-sm pt-3">
               <li>
                 <a
-                  className="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-1"
-                  href="https://www.twitter.de/xyz"
+                  className="inline-block text-gray-600 underline hover:text-gray-900 hover:text-underline py-1"
+                  href="https://www.kristin-baumann.com/"
                 >
-                  Add social link
+                  Website
                 </a>
               </li>
               <li>
                 <a
-                  className="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-1"
-                  href="https://www.twitter.de/xyz"
+                  className="inline-block text-gray-600 underline hover:text-gray-900 hover:text-underline py-1"
+                  href="https://twitter.com/kristin_baumann"
                 >
-                  Add social link
-                </a>
-              </li>
-              <li>
-                <a
-                  className="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-1"
-                  href="https://www.twitter.de/xyz"
-                >
-                  Add social link
+                  Twitter
                 </a>
               </li>
             </ul>

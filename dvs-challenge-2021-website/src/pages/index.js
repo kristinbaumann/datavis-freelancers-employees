@@ -158,7 +158,7 @@ const IndexPage = () => {
         <hr class="border-b-1 border-gray-400 mb-8" />
       </div>
 
-      <div className={containerStyle}>
+      <div className={containerStyle} id="positions">
         <ChapterHeadline>
           2.) Positions - Which hat are you wearing?
         </ChapterHeadline>
@@ -175,7 +175,7 @@ const IndexPage = () => {
       </div>
       <FlourishEmbed vis_id={8420535} />
 
-      <div className={containerStyle}>
+      <div className={containerStyle} id="audiences">
         <ChapterHeadline>
           3.) Target Audiences - Who is (hopefully) seeing your viz?
         </ChapterHeadline>
@@ -199,7 +199,7 @@ const IndexPage = () => {
       </div>
       <FlourishEmbed vis_id={8398594} />
 
-      <div className={containerStyle}>
+      <div className={containerStyle} id="channels">
         <ChapterHeadline>
           4.) Communication Channels - How do you present your finished work?
         </ChapterHeadline>
@@ -223,51 +223,50 @@ const IndexPage = () => {
       </div>
       <FlourishEmbed vis_id={8398514} />
 
-      <div className={containerStyle}>
-        <ChapterHeadline>5.) Technologies</ChapterHeadline>
+      <div className={containerStyle} id="tech">
+        <ChapterHeadline>
+          5.) Tools & Technologies - How do you actually create your viz?
+        </ChapterHeadline>
         <TextSection>
-          What tools and technologies do you use to create your vis?
+          In this last dot plot it becomes clear that the top three tools are
+          similar for employees and freelancers, but the discrepancies between
+          first, second and third is stronger compared to the communication
+          channels: <Hl t="b">Excel, Tableau and PowerPoint</Hl>.<br />
+          While <Hl t="em">employees also fall back on PowerBI</Hl>,{" "}
+          <Hl t="fr">
+            freelancers use way more often Illustrator or just pen and paper
+          </Hl>
+          . Respondents prefer coding in Python, R and D3.
         </TextSection>
       </div>
 
       <FlourishEmbed vis_id={8398316} />
-      <div className={containerStyle}>
-        <TextSection>
-          for both groups: Excel on top position by far. good second place
-          Tableau. on third place PowerPoint. for ems also strong PowerBI. but
-          looks different for frees ...
-        </TextSection>
-      </div>
 
-      <div className={containerStyle}>
-        <hr class="border-b-1 border-gray-400 mb-8" />
-      </div>
-
-      <div className={containerStyle}>
+      <div className={containerStyle} id="conclusion">
         <ChapterHeadline>6.) Conclusion</ChapterHeadline>
         <TextSection>
-          Sed dignissim lectus ut tincidunt vulputate. Fusce tincidunt lacus
-          purus, in mattis tortor sollicitudin pretium. Phasellus at diam
-          posuere, scelerisque nisl sit amet, tincidunt urna. Cras nisi diam,
-          pulvinar ut molestie eget, eleifend ac magna. Sed at lorem
-          condimentum, dignissim lorem eu, blandit massa. Phasellus eleifend
-          turpis vel erat bibendum scelerisque. Maecenas id risus dictum,
-          rhoncus odio vitae, maximus purus. Etiam efficitur dolor in dolor
-          molestie ornare. Aenean pulvinar diam nec neque tincidunt, vitae
-          molestie quam fermentum. Donec ac pretium diam. Suspendisse sed odio
-          risus. Nunc nec luctus nisi. Class aptent taciti sociosqu ad litora
-          torquent per conubia nostra, per inceptos himenaeos. Duis nec nulla
-          eget sem dictum elementum. <br />
+          We might have different images of a stereotype employee and cliché
+          freelancer in our head, shaped for example by media or personal
+          experiences. This analysis with the underlying survey data hopefully
+          sharpens this image to allow a more general view on the different
+          aspects.
           <br />
-          freelance designer -- easier changeable per project? searched for on a
-          project by project basis. different laws make it easier to work as
-          designer freelancer than other role in freelance. seldom company with
-          freelance leadership -- stability, festangestellt. for freelancers
-          mainly general public, for ems mainly executives → more than half of
-          all people answered for these two responses (among others). ems →
-          other team members from product teams (executives, analysts, PMs) fr
-          more not in own team → researchers, policy makers, scientists, med
-          staff
+          Picking the strongest differences from all aspects, the respondents of
+          the survey seem to show a freelancer who is more focused on the
+          creative side of the data vis industry. A designer who is using
+          Illustrator to a create vis in a scrollytelling website or for social
+          media to target the general public or specific decision makers.
+          <br />
+          On the other hand we might imagine an employee in an analyst or
+          leadership position who is creating data vis with Excel, Tableau or
+          PowerPoint to deliver them to executives via presentations, dashboards
+          or even via Email.
+          <br />
+          The working environment where individuals thrive in differs from
+          person to person. As work takes up a lot if time in everyones lives, I
+          wish you the power to continuously improve your work environment which
+          might also include a switch between working in permanent position and
+          as a self-employed freelancer 🤞
         </TextSection>
       </div>
 
