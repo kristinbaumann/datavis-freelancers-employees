@@ -9,7 +9,7 @@ module.exports = {
     extend: {
       colors: {
         freelancer: "#1D6996",
-        employee: "#EDAD08",
+        employee: "#d59b03",
       },
     },
   },

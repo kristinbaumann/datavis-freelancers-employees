@@ -3,6 +3,7 @@ import * as React from "react";
 import FlourishEmbed from "../components/FlourishEmbed";
 import Footer from "../components/Footer";
 import Hero from "../components/Hero";
+import HelmetComponent from "../components/HelmetComponent";
 
 const containerStyle = "container w-full md:max-w-3xl mx-auto px-4 md:px-6";
 const linkStyle = "underline"; //"text-green-500 no-underline hover:underline";
@@ -38,8 +39,8 @@ const Hl = Highlight;
 
 const IndexPage = () => {
   return (
-    // general for whole page
     <div className="bg-gray-100 font-sans leading-normal tracking-normal text-gray-800 ">
+      <HelmetComponent />
       <Hero />
 
       {/* Chapter: Introduction */}

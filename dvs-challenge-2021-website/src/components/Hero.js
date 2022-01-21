@@ -2,7 +2,7 @@ import * as React from "react";
 
 const Hero = () => (
   <div className="bg-white border-b border-gray-400 shadow font-sans py-16 px-2">
-    <h1 className="font-bold font-sans break-normal pb-6 text-[2rem] md:text-[3.5rem] text-center leading-snug">
+    <h1 className="font-bold break-normal pb-6 text-[2rem] md:text-[3.5rem] text-center leading-snug">
       <span className="text-freelancer italic font-serif">Freelancers</span> and{" "}
       <span className="text-employee italic font-serif">Employees</span>{" "}
       <br className="hidden md:block" />

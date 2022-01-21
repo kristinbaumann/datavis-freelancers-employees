@@ -1,11 +1,14 @@
 {
-  "name": "dvs-challenge-2021",
+  "name": "datavis-freelance-employees",
   "version": "1.0.0",
   "private": true,
-  "description": "DVS SOTI Challenge 2021",
-  "author": "Kristin Baumann",
+  "description": "Comparison of Freelancers and Employees in the Data Vis Society Survey 2021",
+  "url": "https://datavis-freelancer-employees.kristin-baumann.com/",
+  "author": "Kristin Baumann (http://www.kristin-baumann.com)",
+  "license": "MIT",
   "keywords": [
-    "gatsby"
+    "gatsby",
+    "datavis"
   ],
   "scripts": {
     "develop": "gatsby develop",
