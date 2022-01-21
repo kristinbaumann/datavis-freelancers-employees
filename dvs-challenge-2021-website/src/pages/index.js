@@ -30,10 +30,6 @@ const Highlight = ({ t, children }) => {
       type = "employee";
       break;
     }
-    case "b": {
-      type = "both";
-      break;
-    }
     default:
   }
   return <span className={`text-${type}`}>{children}</span>;
@@ -114,12 +110,11 @@ const IndexPage = () => {
           combinations grouped to differentiate between employees, freelancers
           and others. With up to 7 possible answers, people you describe their
           roles as a data visualizer in many combinations. <br />
-          While the viz shows that the{" "}
+          While the vis shows that the{" "}
           <Hl t="em">majority of people are employees</Hl> and{" "}
           <Hl t="fr">freelancers make up only about a fifth</Hl> of the number
-          of employees, there is also a{" "}
-          <Hl t="b">group of people who work simultaneously as both</Hl>, in a
-          permanent position as well as self-employed.
+          of employees, there is also a group of people who work simultaneously
+          as both, in a permanent position as well as self-employed.
           <br />
           Other role combinations (like respondents who selected that they are
           hobbyists, students or academics) make up a smaller proportion when
@@ -136,21 +131,23 @@ const IndexPage = () => {
           freelancers and employees based on the answer to this first question.
           To get distinctive results while maintaining enough data points, the
           definition is the following:
-          <ul>
-            <li>
-              <b>Employees</b>: Respondents who answered this question by only
-              selecting "Position in an organization with some dataviz job
-              responsibilities" and no other role (this also excludes people
-              with the additional answers of freelancer)
-            </li>
-            <li>
-              <b>Freelancers</b>: Respondents who answered this question by at
-              least selecting "Freelance/Consultant/Independent contractor" but
-              not selecting the employee answer (so this allows role
-              combinations like freelancer and students or freelancer and
-              academic)
-            </li>
-          </ul>
+          <div className="pl-5">
+            <ul className="list-disc list-outside">
+              <li>
+                <b>Employees</b>: Respondents who answered this question by only
+                selecting "Position in an organization with some dataviz job
+                responsibilities" and no other role (this also excludes people
+                with the additional answers of freelancer)
+              </li>
+              <li>
+                <b>Freelancers</b>: Respondents who answered this question by at
+                least selecting "Freelance/Consultant/Independent contractor"
+                but not selecting the employee answer (so this allows role
+                combinations like freelancer and students or freelancer and
+                academic)
+              </li>
+            </ul>
+          </div>
         </blockquote>
       </div>
 
@@ -177,20 +174,20 @@ const IndexPage = () => {
 
       <div className={containerStyle} id="audiences">
         <ChapterHeadline>
-          3.) Target Audiences - Who is (hopefully) seeing your viz?
+          3.) Target Audiences - Who is (hopefully) seeing your vis?
         </ChapterHeadline>
         <TextSection>
           When working in the data vis industry, respondents target specific
-          audiences with their viz. These target audiences vary also quite a
+          audiences with their vis. These target audiences vary also quite a
           lot.
           <br />
-          Employees make a viz{" "}
+          Employees make a vis{" "}
           <Hl t="em">
             mostly for executives, product or project managers or (other)
             analysts.{" "}
           </Hl>
           Freelancers also target these groups, but they do it way less, since
-          they mainly produce a viz{" "}
+          they mainly produce a vis{" "}
           <Hl t="fr">
             for the general public, executives, researches or policy makers
           </Hl>
@@ -204,13 +201,11 @@ const IndexPage = () => {
           4.) Communication Channels - How do you present your finished work?
         </ChapterHeadline>
         <TextSection>
-          Creating an intriguing data viz is important, but nothing without the
+          Creating an intriguing data vis is important, but nothing without the
           proper delivery to your target audience. <br />
           The top three communication channels are similar for both employees
-          and freelancers:{" "}
-          <Hl t="b">
-            in the form of presentations, in dashboards or in documents/reports.
-          </Hl>
+          and freelancers: in the form of presentations, in dashboards or in
+          documents/reports.
           <br />
           But stronger differences follow:{" "}
           <Hl t="fr">
@@ -225,13 +220,14 @@ const IndexPage = () => {
 
       <div className={containerStyle} id="tech">
         <ChapterHeadline>
-          5.) Tools & Technologies - How do you actually create your viz?
+          5.) Tools & Technologies - How do you actually create your vis?
         </ChapterHeadline>
         <TextSection>
           In this last dot plot it becomes clear that the top three tools are
           similar for employees and freelancers, but the discrepancies between
           first, second and third is stronger compared to the communication
-          channels: <Hl t="b">Excel, Tableau and PowerPoint</Hl>.<br />
+          channels: Excel, Tableau and PowerPoint.
+          <br />
           While <Hl t="em">employees also fall back on PowerBI</Hl>,{" "}
           <Hl t="fr">
             freelancers use way more often Illustrator or just pen and paper

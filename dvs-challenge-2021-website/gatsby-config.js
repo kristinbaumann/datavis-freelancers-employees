@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `DVS Challenge 2021`,
+    title: `Freelancers and Employees in the Data Vis Industry`,
     siteUrl: `https://dvs-soti-challenge-2021.kristin-baumann.com/`,
   },
   plugins: [
@@ -11,7 +11,7 @@ module.exports = {
       resolve: `gatsby-plugin-scroll-indicator`,
       options: {
         // Configure color of the scroll indicator
-        color: "#008000",
+        color: "#999999",
         // Height of the scroll indicator
         height: "3px",
       },
