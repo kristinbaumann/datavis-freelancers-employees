@@ -11,7 +11,7 @@ const Hero = () => (
     <div className="container w-full md:max-w-3xl mx-auto px-4 md:px-6">
       <p className="text-l md:text-xl font-normal text-gray-600 text-center">
         Insights from the Annual Data Visualization State of the Industry Survey
-        2021 <br className="hidden md:block" /> by Kristin Baumann
+        2021 <br /> by Kristin Baumann
       </p>
     </div>
   </div>
