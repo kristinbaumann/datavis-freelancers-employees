@@ -1,7 +1,11 @@
 import * as React from "react";
+import DataHeroSVG from "../images/undraw_data_edited.inline.svg";
 
 const Hero = () => (
   <div className="bg-white border-b border-gray-400 shadow font-sans py-16 px-2">
+    <div className="md:h-72 h-40 mx-auto pb-4">
+      <DataHeroSVG />
+    </div>
     <h1 className="font-bold break-normal pb-6 text-[2rem] md:text-[3.5rem] text-center leading-snug">
       <span className="text-freelancer italic font-serif">Freelancers</span> and{" "}
       <span className="text-employee italic font-serif">Employees</span>{" "}
