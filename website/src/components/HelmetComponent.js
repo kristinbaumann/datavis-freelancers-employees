@@ -15,7 +15,10 @@ const HelmetComponent = () => (
       name="description"
       content="Comparison of Freelancers and Employees in the Data Vis Society Survey 2021"
     />
-    <meta property="og:image" content={shareImage} />
+    <meta
+      property="og:image"
+      content={`https://datavis-freelancers-employees.kristin-baumann.com${shareImage}`}
+    />
   </Helmet>
 );
 
