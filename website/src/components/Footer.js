@@ -1,5 +1,8 @@
 import * as React from "react";
 
+const linkStyle =
+  "inline-block text-gray-600 underline hover:text-gray-900 hover:text-underline py-1";
+
 const Footer = () => (
   <footer className="bg-white border-t border-gray-400 shadow">
     <div className="container max-w-4xl mx-auto flex py-8">
@@ -9,8 +12,15 @@ const Footer = () => (
             <h3 className="font-bold text-gray-900">About</h3>
             <p className="py-4 text-gray-600 text-sm">
               Project by Kristin Baumann as part of the Data Vis Society
-              Challenge 2021. <br />
-              Created with Gatsby, Flourish and Netlify.
+              Challenge 2021.{" "}
+              <a
+                className={linkStyle}
+                href="https://github.com/kristinbaumann/datavis-freelancers-employees"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Github Repo
+              </a>
             </p>
           </div>
         </div>
@@ -23,16 +33,20 @@ const Footer = () => (
             <ul className="list-reset items-center text-sm pt-3">
               <li>
                 <a
-                  className="inline-block text-gray-600 underline hover:text-gray-900 hover:text-underline py-1"
+                  className={linkStyle}
                   href="https://www.kristin-baumann.com/"
+                  target="_blank"
+                  rel="noreferrer"
                 >
                   Website
                 </a>
               </li>
               <li>
                 <a
-                  className="inline-block text-gray-600 underline hover:text-gray-900 hover:text-underline py-1"
+                  className={linkStyle}
                   href="https://twitter.com/kristin_baumann"
+                  target="_blank"
+                  rel="noreferrer"
                 >
                   Twitter
                 </a>
