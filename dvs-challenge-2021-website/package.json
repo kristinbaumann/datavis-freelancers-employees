@@ -18,6 +18,7 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "@fontsource/source-sans-pro": "^4.5.1",
     "gatsby": "^4.5.2",
     "gatsby-plugin-image": "^2.5.1",
     "gatsby-plugin-react-helmet": "^5.5.0",

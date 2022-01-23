@@ -6,7 +6,7 @@ const Hero = () => (
     <div className="md:h-72 h-40 mx-auto pb-4">
       <DataHeroSVG />
     </div>
-    <h1 className="font-bold break-normal pb-6 text-[2rem] md:text-[3.5rem] text-center leading-snug">
+    <h1 className="font-black break-normal pb-6 text-[2rem] md:text-[3.5rem] text-center leading-snug">
       <span className="text-freelancer">Freelancers</span> and{" "}
       <span className="text-employee">Employees</span>{" "}
       <br className="hidden md:block" />

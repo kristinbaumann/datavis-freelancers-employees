@@ -101,7 +101,7 @@ const IndexPage = () => {
       </div>
 
       <div className={containerStyle}>
-        <hr class="border-b-1 border-gray-400 mb-8" />
+        <hr className="border-b-1 border-gray-400 mb-8" />
       </div>
 
       <div className={containerStyle}>
@@ -154,7 +154,7 @@ const IndexPage = () => {
       </div>
 
       <div className={containerStyle}>
-        <hr class="border-b-1 border-gray-400 mb-8" />
+        <hr className="border-b-1 border-gray-400 mb-8" />
       </div>
 
       <div className={containerStyle} id="positions">
