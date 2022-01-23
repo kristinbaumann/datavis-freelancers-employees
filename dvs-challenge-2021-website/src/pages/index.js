@@ -17,7 +17,7 @@ const TextSection = ({ children }) => {
 };
 
 const ChapterHeadline = ({ children }) => (
-  <h2 className="pt-9 pb-2 text-4xl font-bold font-serif">{children}</h2>
+  <h2 className="pt-9 pb-2 text-4xl font-bold">{children}</h2>
 );
 
 const Highlight = ({ t, children }) => {

@@ -7,8 +7,8 @@ const Hero = () => (
       <DataHeroSVG />
     </div>
     <h1 className="font-bold break-normal pb-6 text-[2rem] md:text-[3.5rem] text-center leading-snug">
-      <span className="text-freelancer italic font-serif">Freelancers</span> and{" "}
-      <span className="text-employee italic font-serif">Employees</span>{" "}
+      <span className="text-freelancer">Freelancers</span> and{" "}
+      <span className="text-employee">Employees</span>{" "}
       <br className="hidden md:block" />
       in the Data Visualization Industry
     </h1>
