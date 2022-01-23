@@ -1,10 +1,10 @@
 {
-  "name": "datavis-freelance-employees",
+  "name": "datavis-freelancers-employees",
   "version": "1.0.0",
   "private": true,
   "description": "Comparison of Freelancers and Employees in the Data Vis Society Survey 2021",
-  "url": "https://datavis-freelancer-employees.kristin-baumann.com/",
-  "author": "Kristin Baumann (http://www.kristin-baumann.com)",
+  "url": "https://datavis-freelancers-employees.kristin-baumann.com/",
+  "author": "Kristin Baumann (https://www.kristin-baumann.com)",
   "license": "MIT",
   "keywords": [
     "gatsby",
